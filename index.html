@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Poem Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ AI Poem Generator</h1>
+            <p class="subtitle">Transform your thoughts into beautiful poetry</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <form id="poemForm">
+                    <div class="form-group">
+                        <label for="topic">What would you like a poem about?</label>
+                        <input 
+                            type="text" 
+                            id="topic" 
+                            name="topic" 
+                            placeholder="e.g., sunset, love, ocean waves, childhood memories..."
+                            required
+                            autocomplete="off"
+                        >
+                    </div>
+                    <button type="submit" id="generateBtn" class="generate-btn">
+                        <span class="btn-text">Generate Poem</span>
+                        <span class="loading-spinner"></span>
+                    </button>
+                </form>
+            </div>
+
+            <div id="poemDisplay" class="poem-display hidden">
+                <div class="poem-header">
+                    <h2 id="poemTitle"></h2>
+                    <button id="copyBtn" class="copy-btn" title="Copy poem to clipboard">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="poemContent" class="poem-content"></div>
+                <button id="newPoemBtn" class="new-poem-btn">Create Another Poem</button>
+            </div>
+
+            <div id="errorDisplay" class="error-display hidden">
+                <p id="errorMessage"></p>
+                <button id="tryAgainBtn" class="try-again-btn">Try Again</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by OpenAI GPT-3.5 & AWS Lambda</p>
+        </footer>
+    </div>
+
+    <div class="background-decoration">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

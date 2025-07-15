@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+lambda-env/
+
+# Package files
+package/
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# AWS
+output.json
+bucket-policy.json
+
+# Temporary files
+*.log
+*.tmp 
