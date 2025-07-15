@@ -1,5 +1,6 @@
 // API Configuration
-const API_ENDPOINT = 'https://ytxzaqj65a.execute-api.us-east-1.amazonaws.com';
+// Updated to use Lambda Function URL instead of API Gateway
+const API_ENDPOINT = 'https://7chjwbzv5746ecow4k4fg72jx40umcup.lambda-url.us-east-1.on.aws/';
 
 // DOM Elements
 const poemForm = document.getElementById('poemForm');
