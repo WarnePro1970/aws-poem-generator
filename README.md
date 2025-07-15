@@ -2,6 +2,8 @@
 
 A serverless AWS Lambda function that generates creative poems on any topic using OpenAI's GPT API.
 
+🌐 **Live Demo**: [https://warnepro1970.github.io/aws-poem-generator/](https://warnepro1970.github.io/aws-poem-generator/)
+
 ## Features
 
 - 🎭 Generate poems on any topic
